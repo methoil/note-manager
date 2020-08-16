@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server --open"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +23,9 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
     "redux": "^4.0.5"
   }
 }
