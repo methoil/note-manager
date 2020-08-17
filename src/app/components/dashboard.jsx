@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {withRouter} from 'react-router-dom';
 import { ConnectedTaskList } from './task-list';
 
 export const Dashboard = ({groups}) => (
@@ -18,4 +19,4 @@ function mapStateToProps(state) {
     }
 }
 
-export const ConnectedDashboard = connect(mapStateToProps)(Dashboard);
+export const ConnectedDashboard = withRouter(connect(mapStateToProps)(Dashboard));
