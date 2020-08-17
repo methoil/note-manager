@@ -3,8 +3,8 @@ import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
 
 const TaskDetail = ({ id, comments, task, isComplete, groups }) => (
-  <div>
-    <h2>{task.name}</h2>
+  <div style={{ display: "flex", flexDirection: "column", maxWidth: '200px' }}>
+    <input value={task.name} />
     <button>Complete / Reopen Task</button>
 
     <select>
@@ -14,7 +14,7 @@ const TaskDetail = ({ id, comments, task, isComplete, groups }) => (
         </option>
       ))}
     </select>
-    <Link to="dashboard">
+    <Link to="/dashboard">
       <button>Done</button>
     </Link>
   </div>
